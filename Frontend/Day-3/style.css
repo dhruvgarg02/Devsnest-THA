@@ -1,0 +1,203 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0b7dee;
+    height: 150vh;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.resume-box {
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.box-outer {
+    padding: 80px;
+}
+
+.box-1 {
+    background-color: #26252d;
+    width: 35%;
+    float: left;
+    height: 1000px;
+}
+
+.box-2 {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.profile {
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    color: #ceced1;
+    font-family: Mate SC;
+    font-weight: 300;
+}
+
+p {
+    color: #ceced1;
+    font-family: Mate SC;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#progress1 {
+    background-color: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+    padding: 3px;
+}
+#progress1::after {
+    content: '';
+    display: block;
+    background-color: orange;
+    border-radius: 9px;
+    height: 8px;
+    width: 90%;
+}
+
+#progress2 {
+    background-color: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+    padding: 3px;
+}
+#progress2::after {
+    content: '';
+    display: block;
+    background-color: orange;
+    border-radius: 9px;
+    height: 8px;
+    width: 70%;
+}
+
+#progress3 {
+    background-color: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+    padding: 3px;
+}
+#progress3::after {
+    content: '';
+    display: block;
+    background-color: orange;
+    border-radius: 9px;
+    height: 8px;
+    width: 70%;
+}
+
+#progress4 {
+    background-color: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+    padding: 3px;
+}
+#progress4::after {
+    content: '';
+    display: block;
+    background-color: orange;
+    border-radius: 9px;
+    height: 8px;
+    width: 80%;
+}
+
+.intro {
+    text-align: center;
+}
+.intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #26252d;
+}
+
+.hr {
+    height: 15px;
+    width: 400px;
+    align: center;
+    border: none;
+    background-color: yellow;
+    margin: -45px auto;
+}
+
+.intro-para {
+    color: #7d7d7d;
+    font-family: Mate SC;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 13%!important;
+}
+.intro p{
+    color: #7d7d7d;
+    font-family: Mate SC;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+.content-2 {
+    padding-top: 20px;
+}
+
+.head {
+    color: #26252d;
+    font-family: Mate SC;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.para-1 {
+    font-family: Mate SC;
+    font-size: 20px;
+    color: #26252d;
+    font-weight: 400;
+    margin: 5px, 0px;
+    margin-top: 10px;
+}
+
+.para-2 {
+    font-family: Mate SC;
+    font-size: 16px;
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.para-3 {
+    font-family: Mate SC;
+    font-size: 18px;
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    float: left;
+}
+
+.para-4 {
+    font-family: Mate SC;
+    font-size: 18px;
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    float: right;
+}
