@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
 body {
     margin: 0px;
     padding: 0px;
@@ -53,6 +55,13 @@ p {
     font-family: Mate SC;
     font-weight: 300;
     font-size: 16px;
+}
+
+a {
+    color: #ceced1;
+    font-family: Mate SC;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 #progress1 {
