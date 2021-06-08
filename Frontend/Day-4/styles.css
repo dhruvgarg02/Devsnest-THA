@@ -185,16 +185,30 @@
     transform-origin: left;
 }
 
-.second {
+.second1{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 43%;
+    left: 50%;
     margin-right: 30px;
     margin: auto;
     height: 2px;
-    width: 135px;
-    background-color: black;
-    animation: rotate 60s infinite linear;
-    transform-origin: 16.7% 100%;
+    width: 120px;
+    background-color: red;
+    animation: rotate 6s infinite linear;
+    transform-origin: left;
+}
+
+.second2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: 30px;
+    margin: auto;
+    height: 2px;
+    width: 15px;
+    background-color: red;
+    animation: rotate 6s infinite linear;
+    transform-origin: right;
 }
