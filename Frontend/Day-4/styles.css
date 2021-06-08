@@ -195,7 +195,7 @@
     height: 2px;
     width: 120px;
     background-color: red;
-    animation: rotate 6s infinite linear;
+    animation: rotate 60s infinite linear;
     transform-origin: left;
 }
 
