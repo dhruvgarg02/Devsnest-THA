@@ -6,6 +6,7 @@
 }
 
 body {
+    display: flex;
     height: 100vh;
     width: 100vw;
     background-color: #3598f0;
@@ -24,8 +25,8 @@ i {
     overflow: hidden;
     position: absolute;
     background: white;
-    width: 20vw;
-    height: 70vh;
+    width: 305px;
+    height: 510px;
     border-radius: 6px;
     margin: auto;
     top: 0;
