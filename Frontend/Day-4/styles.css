@@ -43,11 +43,11 @@
     box-shadow: 0 0 5px #000000;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .twelve {
     font-size: 20px;
@@ -167,7 +167,7 @@
     height: 5px;
     width: 90px;
     background-color: black;
-    animation: rotate 43200s infinite linear;
+    /* animation: rotate 43200s infinite linear; */
     transform-origin: left;
 }
 
@@ -181,7 +181,7 @@
     height: 5px;
     width: 110px;
     background-color: black;
-    animation: rotate 3600s infinite linear;
+    /* animation: rotate 3600s infinite linear; */
     transform-origin: left;
 }
 
@@ -195,7 +195,7 @@
     height: 2px;
     width: 120px;
     background-color: red;
-    animation: rotate 60s infinite steps(60, end);
+    /* animation: rotate 60s infinite steps(60, end); */
     transform-origin: left;
 }
 
@@ -209,6 +209,6 @@
     height: 2px;
     width: 15px;
     background-color: red;
-    animation: rotate 60s infinite steps(60, end);
+    /* animation: rotate 60s infinite steps(60, end); */
     transform-origin: right;
 }
