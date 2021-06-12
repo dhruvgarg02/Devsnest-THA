@@ -36,18 +36,18 @@
             // console.log(hour);
 
             setInterval (() =>  {
-                    let day = new Date();
-                    let hh = day.getHours();
-                    let mm = day.getMinutes();
-                    let ss = day.getSeconds();
-                    if (hh > 12) hh -= 12;
-                    if (hh == 0) hh = 12;
-                    console.log(hour);
+                let day = new Date();
+                let hh = day.getHours();
+                let mm = day.getMinutes();
+                let ss = day.getSeconds();
+                if (hh > 12) hh -= 12;
+                if (hh == 0) hh = 12;
+                console.log(hour);
 
-                    hour.style.transform = `rotate(${(hh*30) + (mm/2)}deg)`;
-                    minute.style.transform = `rotate(${mm*6}deg)`;
-                    second1.style.transform = `rotate(${ss*6}deg)`;
-                    second2.style.transform = `rotate(${ss*6}deg)`;
+                hour.style.transform = `rotate(${(hh*30) + (mm/2)}deg)`;
+                minute.style.transform = `rotate(${mm*6}deg)`;
+                second1.style.transform = `rotate(${ss*6}deg)`;
+                second2.style.transform = `rotate(${ss*6}deg)`;
             }, 1000);
         </script>
     </body>
