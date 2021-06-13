@@ -13,6 +13,11 @@ function handleExp(text) {
     else if (text == "←") expression = expression.slice(0, expression.length - 1);
     else if (text == "AC") expression = "";
     else expression += text;
+    if (expression == Infinity) {
+        displaytext(expression);
+        expression = "";
+    }
+    else
     displaytext(expression);
 }
 
