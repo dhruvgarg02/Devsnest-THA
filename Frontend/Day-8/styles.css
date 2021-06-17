@@ -32,16 +32,17 @@
   position: relative;
   height: 20px;
   width: 20px;
-  background-color: #E24E3F;
+  background-color: black;
   cursor: pointer;
   transition: all 0.1s;
   border: solid 0.1px white;
 }
 
 .container:hover input + .checkmark {
-  background-color: #DE4738;
+  background-color: #ddd;
 }
 
 .container input:checked + .checkmark {
-  background-color: #ffffff;
+  background-color: yellow;
+  border: solid 0.1px yellow;
 }
