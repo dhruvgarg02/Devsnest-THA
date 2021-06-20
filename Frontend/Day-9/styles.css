@@ -14,22 +14,22 @@ body {
 
 .screen {
     width: 50vw;
-    height: 3vh;
+    height: 4vh;
     border-radius: 100px 100px 0px 0px;
     background-color: #2c0703;
     text-align: center;
     color: white;
-    font-size: 2vh;
-    line-height: 3vh;
+    font-size: 3vh;
+    line-height: 4vh;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .theatre {
     height: 72vh;
     width: 80vw;
-    margin-top: 15vh;
+    margin-top: 7vh;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     border: 6px solid #020253;
 }
 
@@ -48,4 +48,14 @@ body {
 
 .booked:hover {
     background-color: #05aa65c7;
+}
+
+.seatsCount {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vh;
+    margin-top: 8vh;
+    text-align: center;
+    column-gap: 10vw;
 }
