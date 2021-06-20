@@ -3,7 +3,7 @@ let display = document.querySelector(".display");
 let expression = "";
 
 function displaytext(exp) {
-    display.textContent = expression;
+    display.textContent = exp;
 }
 
 function handleExp(text) {
