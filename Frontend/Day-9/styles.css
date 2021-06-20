@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #52969b;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.screen {
+    width: 50vw;
+    height: 3vh;
+    border-radius: 100px 100px 0px 0px;
+    background-color: #2c0703;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    line-height: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.theatre {
+    height: 72vh;
+    width: 80vw;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 6px solid #020253;
+}
+
+.seat {
+    background-color: #0037ce;
+    border: 3px solid #cacaca;
+}
+
+.seat:hover {
+    background-color: #4981c2c7;
+}
+
+.booked {
+    background-color: #037e32;
+}
+
+.booked:hover {
+    background-color: #05aa65c7;
+}
