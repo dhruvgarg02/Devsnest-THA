@@ -1,25 +1,22 @@
 let bookedSeatsCounter = document.querySelector(".booked_seats")
 let remainingSeatsCounter = document.querySelector(".remaining_seats")
-let seats = document.querySelectorAll(".seat")
+let totalSeats = 48
+let bookedCounter = 0
+let theatre = document.querySelector(".theatre")
 
-let numBooked = 0
-let numRemaining = seats.length
+function seatbooker(event) {
+    event.target.classList.toggle("booked")
+    event.target.classList.contains("booked") ? bookedCounter++ : bookedCounter--;
+    bookedSeatsCounter.innerHTML = bookedCounter
+    remainingSeatsCounter.innerHTML = totalSeats - bookedCounter
+}
 
-bookedSeatsCounter.innerHTML = numBooked
-remainingSeatsCounter.innerHTML = numRemaining
+bookedSeatsCounter.innerHTML = bookedCounter
+remainingSeatsCounter.innerHTML = totalSeats - bookedCounter
 
-
-seats.forEach((seat) => {
-    seat.addEventListener("click", (event) => {
-        event.target.classList.toggle("booked")
-        seat.classList.contains(`booked`) ? counter(1) : counter(-1);
-    })
-})
-
-let counter = (s) => {
-    numBooked += s;
-    numRemaining -= s;
-
-    bookedSeatsCounter.innerHTML = numBooked
-    remainingSeatsCounter.innerHTML = numRemaining
+for (let i = 0; i < totalSeats; i++) {
+    let seat = document.createElement("div")
+    theatre.append(seat)
+    seat.className = "seat"
+    seat.addEventListener("click", seatbooker)
 }

@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #52969b;
+    background-color: #ccc8ff;
     align-items: center;
     justify-content: space-around;
 }
@@ -43,11 +43,11 @@ body {
 }
 
 .booked {
-    background-color: #037e32;
+    background-color: #830901;
 }
 
 .booked:hover {
-    background-color: #05aa65c7;
+    background-color: #bb2c22c7;
 }
 
 .seatsCount {
