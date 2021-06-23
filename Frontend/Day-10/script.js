@@ -1,5 +1,6 @@
 
 let moves_counter = document.getElementById("moves_counter")
+let score_counter = document.getElementById("score")
 let total_cards = 16
 let moves = 30
 let game = document.getElementById("game-container")
@@ -8,8 +9,10 @@ let numfliped = 0;
 let psymbol = 0;
 let items = ['★', '☃', '✎', '✿', '✄', '⌘', '☎', '✈']
 items.push(...items)
+let score = 0;
 
 moves_counter.innerHTML = moves
+score_counter.innerHTML = score;
 
 for (let i = 0; i < total_cards; i++) {
     let card = document.createElement("div")
@@ -49,14 +52,28 @@ function card_flipper() {
     else {
         this.classList.add("flipper")
         console.log(pcard)
-        if (psymbol === this.firstChild.lastChild.innerHTML)
-            console.log("match")
+        if (psymbol === this.firstChild.lastChild.innerHTML) {
+            score++;
+            score_counter.innerHTML = score;
+            if (score === total_cards/2) {
+                sleep(700).then(() => {
+                window.alert("YOU WIN!!")
+            })
+            }
+        }
         else {
             flag = 1;
             sleep(1000).then(() => {
                 pcard.classList.remove("flipper")
                 this.classList.remove("flipper")
                 flag = 0;
+            })
+        }
+        moves--;
+        moves_counter.innerHTML = moves;
+        if (moves == 0) {
+            sleep(700).then(() => {
+            window.alert("GAME OVER!! YOU LOSE!!")
             })
         }
     }
