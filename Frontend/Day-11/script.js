@@ -4,7 +4,7 @@ let numCorrect = 0;
 fetch("data.json").then((response) => {
     return response.json()
 }).then((json) => {
-    console.log(json.length);
+
 
     function createQuesCard(i) {
         let flag = 0;
@@ -38,7 +38,8 @@ fetch("data.json").then((response) => {
         option3.innerHTML = json[i].c
         option4.innerHTML = json[i].d
 
-        function check(event) {
+        function check() {
+            qCard.classList.toggle("show");
             if (flag === 0) {
                 if (json[i][json[i].answer] === this.innerHTML) {
                     numCorrect++;
@@ -78,5 +79,19 @@ fetch("data.json").then((response) => {
         option3.addEventListener("click", check)
         option4.addEventListener("click", check)
     }
-    createQuesCard(0)
+
+    function createWelcomeCard() {
+        let welcomePage = document.createElement('div');
+        let startButton = document.createElement('div');
+        welcomePage.classList.add('question-card');
+        startButton.classList.add('start');
+        mainContainer.append(welcomePage);
+        welcomePage.append(startButton);
+        startButton.addEventListener("click", function() {
+            createQuesCard(1);
+        })
+        console.log(welcomePage);
+    }
+
+    createWelcomeCard();
 })
