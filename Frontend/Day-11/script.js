@@ -80,18 +80,15 @@ fetch("data.json").then((response) => {
         option4.addEventListener("click", check)
     }
 
-    function createWelcomeCard() {
-        let welcomePage = document.createElement('div');
+    function createStartButton() {
         let startButton = document.createElement('div');
-        welcomePage.classList.add('question-card');
-        startButton.classList.add('start');
-        mainContainer.append(welcomePage);
-        welcomePage.append(startButton);
+        startButton.classList.add('start-button');
+        mainContainer.append(startButton);
         startButton.addEventListener("click", function() {
             createQuesCard(1);
         })
         console.log(welcomePage);
     }
 
-    createWelcomeCard();
+    createStartButton();
 })

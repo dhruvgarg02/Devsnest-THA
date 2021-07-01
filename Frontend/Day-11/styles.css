@@ -29,21 +29,27 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    opacity: 1;
-    transition: opacity 1s;
 }
 
-.start {
+.start-button {
     position: absolute;
-    height: 50vh;
-    width: 50vw;
-    padding-top: 5vh;
+    height: 25vh;
+    width: 20vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 15px;
     border-radius: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     transition: transform 0.5s;
-    content: url("./Start!!.svg");
 }
 
-.start:hover {
+.start-button::before {
+    content: url("./Start!!.png");
+}
+
+.start-button:hover {
     transform: scale(1.1);
 }
 
