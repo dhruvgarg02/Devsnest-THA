@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 
 <body>
-
+    <div class="main-container">
+        <h1>To-Do List</h1>
+        <div class="item-container">
+            <div class="list"></div>
+            <div class="container">
+                <input type="text" id="new-item" name="new-item" placeholder="Task"><br><br>
+                <button class="add-item-button">Add</button>
+                <button class="all-done-button">All Done </button>
+                <button class="delete-all-button">Delete All</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

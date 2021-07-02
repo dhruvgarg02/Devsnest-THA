@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Hi+Melody&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Hi Melody', cursive;
+}
+
+*:focus {
+    outline: none;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center; */
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 7vh;
+    font-family: 'Caveat', cursive;
+    font-family: 'Hi Melody', cursive;
+}
+
+.item-container {
+    display: flex;
+}
+
+.list {
+    background: #ECE9E6;
+    display: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 70vh;
+    width: 46vw;
+    border-radius: 1vh;
+    margin-top: 6vh;
+    margin-left: 8vw;
+    font-size: 5vh;
+    padding-top: 3vh;
+    padding-left: 3vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6vw;
+    margin-top: 7vh;
+}
+
+input[type=text] {
+    width: 30vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    font-size: 5vh;
+    border-radius: 1vh;
+    display: inline-block;
+    background-color: wheat;
+}
+
+.add-item-button,
+.all-done-button,
+.delete-all-button {
+    margin-top: 8vh;
+    color: #fff;
+    height: 12vh;
+    font-size: 5vh;
+    border-radius: 1vh;
+    background-color: #4CAF50;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.add-item-button {
+    margin-top: 2vh;
+    background-color: blue;
+}
+
+.all-done-button {
+    background-color: #4CAF50;
+}
+
+.delete-all-button {
+    background-color: red;
+}
+
+.checkcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
