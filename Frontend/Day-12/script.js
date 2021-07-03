@@ -5,7 +5,9 @@ let allDone = document.querySelector('.all-done-button');
 let DeleteAll = document.querySelector('.delete-all-button');
 
 listItems = JSON.parse(localStorage.getItem('listitems'));
+if (listItems === null) listItems = [];
 doneOrNot = JSON.parse(localStorage.getItem('doneornot'));
+if (doneOrNot === null) doneOrNot = [];
 
 addButton.addEventListener("click", add);
 document.addEventListener("keydown", addEnter);
