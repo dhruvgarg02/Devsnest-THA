@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Caveat', cursive;
     font-family: 'Hi Melody', cursive;
+    user-select: none;
 }
 
 *:focus {
@@ -47,7 +48,8 @@ h1 {
     margin-left: 8vw;
     font-size: 5vh;
     padding-top: 3vh;
-    padding-left: 3vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
 }
 
 .container {
@@ -93,15 +95,35 @@ input[type=text] {
     background-color: red;
 }
 
-.checkcontainer {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.delete-item-button {
+    float: right;
+    height: 4vh;
+    width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 0.5vh;
+    background-color: red;
+    content: "Delete";
+    text-align: center;
+    line-height: 5vh;
+    color: #fff;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.delete-item-button::after {
+    content: "Delete";
+}
+
+.delete-item-button:active {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.item {
+    font-size: 5vh;
+}
+
+.strike-through {
+    text-decoration: line-through;
 }
