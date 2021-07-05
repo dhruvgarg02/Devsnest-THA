@@ -58,13 +58,13 @@ function showList() {
 }
 
 function addEnter(key) {
+    if (!textArea.value) return;
     if (key.keyCode === 13) {
         listItems.push(textArea.value);
         doneOrNot.push("0");
         textArea.value = null;
         localStorage.setItem('listitems', JSON.stringify(listItems))
         localStorage.setItem('doneornot', JSON.stringify(doneOrNot))
-
         showList();
     }
 }
