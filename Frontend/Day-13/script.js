@@ -7,8 +7,8 @@ var clouds = document.querySelector('.clouds');
 var humidity = document.querySelector('.humidity');
 var button = document.querySelector('.submit');
 
-document.addEventListener('keydown', (key) => {
-    if (key.keyCode === 13) {
+document.addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
         fetchWeather()
     } else {
         return;
