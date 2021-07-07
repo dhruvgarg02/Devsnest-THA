@@ -29,7 +29,7 @@ function fetchWeather() {
             var descValue = data['weather'][0]['main'];
             var humidityValue = data['main']['humidity'];
 
-            main.innerHTML = nameValue + "," + country;
+            main.innerHTML = nameValue + "," + country + "<br>";
             desc.innerHTML = descValue;
             temp.innerHTML = "Temperature - " + tempValue + "°C";
             feelsLike.innerHTML = "Feels Like - " + feels_Like + "°C";
