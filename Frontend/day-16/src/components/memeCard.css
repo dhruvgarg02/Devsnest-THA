@@ -1,0 +1,21 @@
+.card-container {
+    position: relative;
+    width: 100vw;
+    height: 49.5vh;
+    border-bottom: 1vh solid black;
+}
+
+.meme-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vh;
+    width: 40vh;
+}
+
+.meme-card img {
+    height: 100%;
+    width: 100%;
+    border: 0.5vh solid black;
+}
