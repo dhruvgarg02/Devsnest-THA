@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACI,QAAS,CACT,SAAU,CACV,qBACJ,CAEA,KACI,YAAa,CACb,WAAY,CACZ,YAAa,CACb,oBACJ","file":"main.14f71304.chunk.css","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    height: 100vh;\n    width: 100vw;\n    display: grid;\n    place-content: center;\n}"]}
