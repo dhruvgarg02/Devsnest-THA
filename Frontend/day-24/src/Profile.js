@@ -6,8 +6,8 @@ function Profile() {
   const logger = useContext(Context);
   return (
     <div>
-      <Route>
-        {logger.loginstatus ? <h1>Your Profile</h1> : <Redirect to="/build/" />}
+      <Route>z
+        {logger.loginstatus ? <h1>Your Profile</h1> : <Redirect to="/" />}
       </Route>
     </div>
   );

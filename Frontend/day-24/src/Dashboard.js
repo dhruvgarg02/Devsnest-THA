@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div>
       <Route>
-        {logger.loginstatus ? <h1>Your Dashboard</h1> : <Redirect to="/build/" />}
+        {logger.loginstatus ? <h1>Your Dashboard</h1> : <Redirect to="/" />}
       </Route>
     </div>
   );

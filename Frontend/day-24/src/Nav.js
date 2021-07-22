@@ -9,16 +9,16 @@ function Nav() {
     return (
       <nav>
         <ul className="nav-links">
-          <Link style={navStyle} to="/build/">
+          <Link style={navStyle} to='/'>
             <li>Home</li>
           </Link>
-          <Link style={navStyle} to="/build/about/">
+          <Link style={navStyle} to='/about'>
             <li>About</li>
           </Link>
-          <Link style={navStyle} to="/build/profile/">
+          <Link style={navStyle} to='/profile'>
             <li>Profile</li>
           </Link>
-          <Link style={navStyle} to="/build/dashboard/">
+          <Link style={navStyle} to='/dashboard'>
             <li>Dashboard</li>
           </Link>
         </ul>
