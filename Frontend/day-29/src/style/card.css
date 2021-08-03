@@ -1,0 +1,6 @@
+.card {
+    border: 2vh solid #000;
+    border-radius:2vh;
+    margin-top: 5vh;
+    padding: 0 5vh;
+}
