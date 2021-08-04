@@ -1,6 +1,8 @@
 import "../style/currencySelector.css"
 import {useDispatch, useSelector} from "react-redux";
 import {updateFromCurrency, updateToCurrency, getApiData} from "../actions";
+import digital from "../digital_currency.json"
+import physical from "../physical_currency.json"
 
 const CurrencySelector = () => {
 
@@ -16,26 +18,9 @@ const CurrencySelector = () => {
         }}
         >
             <option value="">Select From</option>
-            <option value="BTC">Bitcoin</option>
-            <option value="DICE">Etheroll</option>
-            <option value="XRP">Ripple</option>
-            <option value="ADA">Cardano</option>
-            <option value="XLM">Stellar</option>
-            <option value="LINK">Chainlink</option>
-            <option value="UNI">Uniswap</option>
-            <option value="DOT">Polkadot</option>
-            <option value="DOGE">DogeCoin</option>
-            <option value="DOPE">DopeCoin</option>
-            <option value="USD">US Dollar</option>
-            <option value="INR">Indian Rupee</option>
-            <option value="EUR">Euro</option>
-            <option value="JPY">Japanese Yen</option>
-            <option value="GBP">British Pound Sterling</option>
-            <option value="AUD">Australian Dollar</option>
-            <option value="CAD">Canadian Dollar</option>
-            <option value="CHF">Swiss Franc</option>
-            <option value="CAD">Canadian Dollar</option>
-            <option value="NZD">New Zealand Dollar</option>
+            {digital.map((currency) => (
+                <option key={currency.code} value={currency.code}>{currency.name}</option>
+            ))}
         </select>
 
         <select id="to-currency" className="dropdown-content" onChange={e => {
@@ -43,16 +28,9 @@ const CurrencySelector = () => {
         }}
         >
             <option value="">Select To</option>
-            <option value="USD">US Dollar</option>
-            <option value="INR">Indian Rupee</option>
-            <option value="EUR">Euro</option>
-            <option value="JPY">Japanese Yen</option>
-            <option value="GBP">British Pound Sterling</option>
-            <option value="AUD">Australian Dollar</option>
-            <option value="CAD">Canadian Dollar</option>
-            <option value="CHF">Swiss Franc</option>
-            <option value="CAD">Canadian Dollar</option>
-            <option value="NZD">New Zealand Dollar</option>
+            {physical.map((currency) => (
+                <option key={currency.code} value={currency.code}>{currency.name}</option>
+            ))}
 
         </select>
 
