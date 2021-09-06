@@ -1,0 +1,22 @@
+[
+    {
+        "username" : "Itachi",
+        "profilePicture" : "https://i.pinimg.com/736x/11/f7/83/11f78374741b89e4dea99e0b6356ee3c.jpg",
+        "post" : [ "https://picsum.photos/800", "https://picsum.photos/800", "https://picsum.photos/800" , "https://picsum.photos/800" ]
+    },
+    {
+        "username" : "Naruto",
+        "profilePicture" : "https://cdn.dribbble.com/users/3144264/screenshots/9655010/96.png",
+        "post" : [ "https://picsum.photos/800", "https://picsum.photos/800", "https://picsum.photos/800" , "https://picsum.photos/800" ]
+    },
+    {
+        "username" : "Kakashi",
+        "profilePicture" : "https://assets-global.website-files.com/5ec26716840913c794a0240f/6012e01cdab9533577db6828_All%20fans%20enjoy%20these%20Kakashi%20quotes..jpg",
+        "post" : [ "https://picsum.photos/800", "https://picsum.photos/800", "https://picsum.photos/800" , "https://picsum.photos/800" ]
+    },
+    {
+        "username" : "Sasuke",
+        "profilePicture" : "https://c4.wallpaperflare.com/wallpaper/370/127/644/uchiha-sasuke-rinnegan-eternal-mangekyou-sharingan-naruto-shippuuden-wallpaper-preview.jpg",
+        "post" : [ "https://picsum.photos/800", "https://picsum.photos/800", "https://picsum.photos/800" , "https://picsum.photos/800" ]
+    }
+]
