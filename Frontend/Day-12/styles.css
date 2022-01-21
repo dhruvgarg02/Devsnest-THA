@@ -73,6 +73,7 @@ input[type=text] {
 .add-item-button,
 .all-done-button,
 .delete-all-button {
+    cursor: pointer;
     margin-top: 8vh;
     color: #fff;
     height: 12vh;
@@ -112,6 +113,7 @@ input[type=text] {
 }
 
 .delete-item-button::after {
+    cursor: pointer;
     content: "Delete";
 }
 
@@ -122,6 +124,7 @@ input[type=text] {
 
 .item {
     font-size: 5vh;
+    cursor: pointer;
 }
 
 .strike-through {
